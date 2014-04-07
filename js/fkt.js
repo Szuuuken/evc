@@ -4,14 +4,11 @@ function get_random_quenstion(){
 		question_id = Math.floor((Math.random() * not_asked_qeustions.length ) % not_asked_qeustions.length)
 	}
 
-	console.log(not_asked_qeustions.length);
-
 	current_question = not_asked_qeustions[question_id];
 	asked_quenstions.push(current_question);
 
 	not_asked_qeustions.splice(question_id,1);
 	
-	console.log(not_asked_qeustions.length);	
 	return current_question;
 }
 
