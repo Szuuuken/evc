@@ -7,7 +7,7 @@
 }
 
 .awnswer_button {
-	width: 25%;
+	width: 35%;
 	display: inline-block;
 	margin: 0 auto;
 	text-align: center;
@@ -37,4 +37,9 @@
 
 .warnung{
 	color: red;
+}
+
+.info_box{
+	text-align: center;
+	font-size: 1.5em;
 }

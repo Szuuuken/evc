@@ -20,10 +20,14 @@
 
 		<div class="container">
 			<div id="question_box" class="well text-center"></div>
-			<span id="answer_box" class="centering">
-				<button id="btn_right" type="button" class="btn btn-success btn-lg awnswer_button" onclick='awnser_button("btn_right")'>richtig</button>
-				<button id="btn_wrong" type="button" class="btn btn-danger btn-lg awnswer_button" onclick='awnser_button("btn_wrong")'>falsch</button>	
-			</span>
+			<div id="answer_box">
+				<span id="correct" class="hidden info_box center-block">Deine Antwort ist richtig!<br/>Die korrekte Antwort ist:</span>
+				<span id="incorrect" class="hidden info_box center-block">Deine Antwort ist falsch!<br/>Die korrekte Antwort ist:</span>
+				<div class="centering">
+					<button id="btn_right" type="button" class="btn btn-success btn-lg awnswer_button" onclick='awnser_button("btn_right")'>richtig</button>
+					<button id="btn_wrong" type="button" class="btn btn-danger btn-lg awnswer_button" onclick='awnser_button("btn_wrong")'>falsch</button>	
+				</div>
+			</div>
 
 			<span id="next_question_box" class="centering hidden">
 				<button type="button" class="btn btn-primary btn-lg awnswer_button" onclick='show_next_question()'>weiter</button>

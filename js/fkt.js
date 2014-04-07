@@ -25,6 +25,8 @@ function show_next_question(){
 	$('#btn_wrong').removeClass('hidden')
 	$('#btn_right').removeClass('hidden')
 	$('#next_question_box').addClass('hidden');
+	$('#correct').addClass('hidden');
+	$('#incorrect').addClass('hidden');
 	show_random_question();
 }
 
@@ -41,7 +43,9 @@ function show_random_question(){
 function awnser_button(button){
 	if((button == "btn_right" && current_question.correct == true) || (button == "btn_wrong" && current_question.correct == false)){
 		$('#answer_box').addClass('correct')
+		$('#correct').removeClass('hidden');
 	}else{
+		$('#incorrect').removeClass('hidden');
 		$('#answer_box').addClass('incorrect')
 	}
 
