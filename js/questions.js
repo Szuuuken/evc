@@ -22,7 +22,7 @@ not_asked_qeustions = [
 	{question : "Rot-grün-blinde Personen sehen nur die Farben Rot und Grün", correct:  false},
 	{question : "Licht mit höherer Frequenz hat eine kleinere Wellenlänge", correct: true},
 	{question : "Die Purpurlinie des CIE Chromaticitydiagramms enthält spektralreine Farben", correct:  false},
-	{question : "Drucker verwenden das YMCK Farbmodell", correct: true},
+	{question : "Drucker verwenden das CMYK Farbmodell", correct: true},
 	{question : "Licht mit niedrigerer Frequenz hat eine kleinere Wellenlänge.", correct:  false},
 	{question : "Beim CMYK-Farbmodell steht K für „Key“ und entspricht der Farbe schwarz.", correct: true},
 	{question : "Das RGB Farbmodell basiert auf den Prinzip der subtraktiven Farbmischung", correct:  false},
