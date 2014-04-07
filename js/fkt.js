@@ -9,12 +9,9 @@ function get_random_quenstion(){
 	current_question = not_asked_qeustions[question_id];
 	asked_quenstions.push(current_question);
 
-	if(question_id == 0){
-		not_asked_qeustions.splice(0,1);	
-	}else{
-		not_asked_qeustions.splice(question_id,question_id);
-	}
+	not_asked_qeustions.splice(question_id,1);
 	
+	console.log(not_asked_qeustions.length);	
 	return current_question;
 }
 
