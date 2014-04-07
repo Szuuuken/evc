@@ -43,3 +43,23 @@
 	text-align: center;
 	font-size: 1.5em;
 }
+
+.bs-sidebar .nav > .active > ul {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#sidebar_box{
+	margin-top: 20px;
+	margin-left: 2em;
+	width: 280px;
+}
+
+#sidebar_box a{
+	color: #428bca;
+}
+
+.changelog_date{
+	font-weight:bold;
+	margin-bottom: 5px;
+}
