@@ -1,3 +1,36 @@
 .padding_1 {
 	padding: 1px 1px 1px 1px;
 }
+
+.centering{
+	display: flex;
+}
+
+.awnswer_button {
+	width: 25%;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#question_box {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-size: 2em;
+}
+
+.hidden {
+	visibility:hidden;
+}
+
+.correct{
+	background-color: #93b881;
+	height: 10em;
+	margin-bottom: 5em;
+}
+
+.incorrect{
+	background-color: #ff6666;
+	height: 10em;
+	margin-bottom: 5em;
+}

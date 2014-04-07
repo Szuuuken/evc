@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/fktcss.css">
 		<script src="js/jquery-2.1.0.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/questions.js"></script>
 		<script src="js/fkt.js"></script>
 
 		<title>EVC-FKT</title>
@@ -14,11 +15,19 @@
 	<body>
 		<div class="jumbotron padding_1">
 			<h1 class="text-center">EVC-FKT</h1>
-			<p class="text-center">Der <b>E</b>inführung in <b>V</b>isual <b>C</b>omputung - <b>F</b>ragen<b>K</b>atalog <b>T</b>rainer</p>
+			<p class="text-center">Der <b>E</b>inführung in <b>V</b>isual <b>C</b>omputung - <b>F</b>ragen<b>K</b>atalog <b>T</b>rainer<br/>(Unoffical)</p>
 		</div>
 
 		<div class="container">
-			<h1>comming soon...</h1>
+			<div id="question_box" class="well text-center"></div>
+			<span id="answer_box" class="centering">
+				<button id="btn_right" type="button" class="btn btn-success btn-lg awnswer_button" onclick='awnser_button("btn_right")'>richtig</button>
+				<button id="btn_wrong" type="button" class="btn btn-danger btn-lg awnswer_button" onclick='awnser_button("btn_wrong")'>falsch</button>	
+			</span>
+
+			<span id="next_question_box" class="centering hidden">
+				<button type="button" class="btn btn-primary btn-lg awnswer_button" onclick='show_next_question()'>weiter</button>
+			</span>
 		</div>
 		
 	</body>
