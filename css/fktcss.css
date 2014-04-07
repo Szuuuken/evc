@@ -52,7 +52,7 @@
 #sidebar_box{
 	margin-top: 20px;
 	margin-left: 2em;
-	width: 280px;
+	width: 15%;
 }
 
 #sidebar_box a{
@@ -62,4 +62,8 @@
 .changelog_date{
 	font-weight:bold;
 	margin-bottom: 5px;
+}
+
+#content {
+	margin-right: 0px;
 }
