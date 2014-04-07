@@ -8,7 +8,7 @@ function get_random_quenstion(){
 	asked_quenstions.push(current_question);
 
 	not_asked_qeustions.splice(question_id,1);
-	
+
 	return current_question;
 }
 
@@ -30,7 +30,6 @@ function show_next_question(){
 function show_random_question(){
 	if(not_asked_qeustions.length > 0){
 		question = get_random_quenstion();
-		console.log(question);
 		$("#question_box").text(question.question)
 	}else{
 		alert('keine Fragen mehr');
