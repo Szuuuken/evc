@@ -10,7 +10,7 @@ not_asked_qeustions = [
 	{question : "256 ist eine mögliche radiometrische Auflösung eines digitalen Bildes.", correct: true},
 	{question : "Nach der Korrektur einer geometrischen Linsenverzerrung erscheinen gerade Kanten im Bild ebenfalls gerade.", correct: true},
 	{question : "Die plenoptische Funktion hat mehrere Ausgabeparameter, aber nur einen Eingabeparameter.", correct:  false},
-	{question : "Farbe wird bei der plenoptischen Funktion nicht berücksichtigt.", correct: false},
+	{question : "Farbe wird bei der plenoptischen Funktion nicht berücksichtigt.", correct: true},
 	{question : "Camera Obscura: Weiter entfernte Objekte erscheinen größer auf der Projektion.", correct:  false},
 	{question : "Das Loch (die Blende) sollte für eine optimale Abbildung so klein wie möglich gewählt werden.", correct: false},
 	{question : "Eine zu große Blende führt zu einem unscharfen Bild.", correct: true},
