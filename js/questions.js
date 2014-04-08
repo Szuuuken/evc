@@ -64,7 +64,7 @@ not_asked_qeustions = [
 	{question : "Die Schwellwertoperation kann mit einer einzigen Faltung des Bildes mit einem geeigneten Filter bewerkstelligt werden.", correct:  false},
 	{question : "Der Median-Filter ist ein linearer Filter.", correct:  false},
 	{question : "Ein zweidimensionaler Mittelwertfilter kann in zwei eindimensionale Filter geteilt werden, die nacheinander auf das Bild angewendet werden.", correct: true},
-	{question : "Gradienten sind invariant zu Bildrotationen.", correct: true},
+	{question : "Gradienten sind invariant zu Bildrotationen.", correct: false},
 	{question : "Bei Kantendetektoren, die auf der 1. Ableitung beruhen, werden Kanten durch Nulldurchgänge in der 1. Ableitung detektiert.", correct:  false},
 	{question : "Bei der Fourier-Transformation werden tiefe Bildfrequenzen unterdrückt.", correct:  false},
 	{question : "Mittels der Hough-Transformation können neben Linien auch andere geometrische Strukturen detektiert werden.", correct: true},
