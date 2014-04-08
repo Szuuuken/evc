@@ -15,7 +15,7 @@ not_asked_qeustions = [
 	{question : "Das Loch (die Blende) sollte für eine optimale Abbildung so klein wie möglich gewählt werden.", correct: false},
 	{question : "Eine zu große Blende führt zu einem unscharfen Bild.", correct: true},
 	{question : "Camera Obscura: Die projiziert Bilder sind schwarz-weiß, die Farbinformation geht verloren.", correct:  false},
-	{question : "Verschiedene Lichtspektren können den gleichen Fabreindruck erzeugen.", correct: true},
+	{question : "Verschiedene Lichtspektren können den gleichen Farbeindruck erzeugen.", correct: true},
 	{question : "HSV schwarz ist wenn S=0.", correct:  false},
 	{question : "RGB kann alle menschlich wahrnehmbaren Farben darstellen.", correct: false},
 	{question : "Die Netzhaut des Auges enthält Stäbchen für das Schwarz/Weiß-Sehen und 3 Zapfenarten für das Farbsehen.", correct: true},
