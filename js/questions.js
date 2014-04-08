@@ -58,7 +58,7 @@ not_asked_qeustions = [
 	{question : "Die Viewport Transformation wandelt Kamerakoordinaten in Pixelkoordinaten um.", correct: false},
 	{question : "Bei der perspektivischen Projektion bleiben die Tiefenwerte von Punkten erhalten.", correct:  false},
 	{question : "Bei der perspektivischen Projektion bleibt die relative Ordnung der Tiefenwerte von Punkten erhalten.", correct: true},
-	{question : "Pixel mit dem gleichen Grauwert können nach einer Histogrammqualisierung unterschiedliche Grauwerte aufweisen.", correct:  false},
+	{question : "Pixel mit dem gleichen Grauwert können nach einer Histogrammequalisierung unterschiedliche Grauwerte aufweisen.", correct:  false},
 	{question : "Der Wert eines Histogramm-Bins kann die Anzahl der Pixel des Bildes übersteigen.", correct:  true},
 	{question : "Die Bildinvertierung kann mit einer einzigen Faltung des Bildes mit einem geeigneten Filter bewerkstelligt werden.", correct:  false},
 	{question : "Die Schwellwertoperation kann mit einer einzigen Faltung des Bildes mit einem geeigneten Filter bewerkstelligt werden.", correct:  false},
