@@ -12,10 +12,6 @@ function get_random_quenstion(){
 	return current_question;
 }
 
-function btn_go() {
-   window.location = "fragen.html";
-}
-
 function show_next_question(){
 	$('#answer_box').removeClass('correct')
 	$('#answer_box').removeClass('incorrect')
