@@ -18,7 +18,15 @@
 			<p class="text-center">Der <b>E</b>inführung in <b>V</b>isual <b>C</b>omputung - <b>F</b>ragen<b>K</b>atalog <b>T</b>rainer<br/>(Unoffical)</p>
 		</div>
 
-		<div class="container">
+
+		<div id="select_questions_container" class="container text-center well">
+			<p><h2>Welche Fragen sollen gestellt werden?</h2></p>
+			<p><label><span class="tab">Fragen vom 1.Test</span><input type="checkbox" id="cb_first_test" name="first_test" value=""></label></p>
+			<p><label><span class="tab">Fragen vom 2.Test</span><input type="checkbox" id="cb_second_test" name="second_test" value=""></label></p>
+			<button type="button" class="btn btn-success" onclick='start_trainer();'>GO!</button>
+		</div>
+
+		<div id="question_container" class="container hidden">
 			<div id="question_box" class="well text-center"></div>
 			<div id="answer_box">
 				<span id="correct" class="hidden info_box center-block">Deine Antwort ist richtig!<br/>Die korrekte Antwort ist:</span>
