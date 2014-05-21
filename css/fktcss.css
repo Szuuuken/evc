@@ -70,3 +70,9 @@
 .tab {
 	padding-right: 1em;
 }
+
+.important{
+	color: red;
+	font-style: bold;
+	font-size: 1.5em;
+}
