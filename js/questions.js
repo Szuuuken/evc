@@ -4,6 +4,8 @@ asked_quenstions = new Array();
 not_asked_questions = new Array();
 correct_answerd_questions_count = 0;
 incorrect_answerd_questions_count = 0;
+right_wrong_keyboard_actions_allowed = false;
+next_question_keyboard_action_allowed = false;
 
 current_question = null;
 

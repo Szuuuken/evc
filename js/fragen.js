@@ -26,6 +26,7 @@ function show_next_question(){
 	$('#incorrect').addClass('hidden');
 	show_random_question();
 	update_stats();
+	right_wrong_keyboard_actions_allowed = true;
 }
 
 function show_random_question(){
@@ -52,6 +53,7 @@ function awnser_button(button){
 
 	$('#next_question_box').removeClass('hidden');
 	update_stats();
+	next_question_keyboard_action_allowed = true;
 }
 
 function awnser_is_correct(){
@@ -91,4 +93,32 @@ function start_trainer(){
 		$('#stats_container').removeClass('hidden')
 		show_random_question();
 	}
+	right_wrong_keyboard_actions_allowed = true;
 }
+
+document.onkeydown = function() {
+	/*	82 r
+		70 f
+		32 space
+	*/
+    switch (window.event.keyCode) {
+        case 82://r
+        	if(right_wrong_keyboard_actions_allowed){
+            	awnser_button("btn_right");
+            	right_wrong_keyboard_actions_allowed = false;            	
+        	}
+            break;
+        case 70://f
+        	if(right_wrong_keyboard_actions_allowed){
+            	awnser_button("btn_wrong");
+            	right_wrong_keyboard_actions_allowed = false;
+            }
+            break;
+        case 32://space
+        	if(next_question_keyboard_action_allowed){
+            	show_next_question();
+            	next_question_keyboard_action_allowed = false;
+            }
+            break;
+    }
+};
