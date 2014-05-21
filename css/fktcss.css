@@ -73,6 +73,24 @@
 
 .important{
 	color: red;
-	font-style: bold;
+	font-weight:bold;
 	font-size: 1.5em;
+}
+
+#stats_container {
+	margin-top: 4em;
+}
+
+#question_stats{
+	font-weight:bold;
+}
+
+#incorrect_stats{
+	font-weight:bold;
+	color: red;
+}
+
+#correct_stats{
+	font-weight:bold;
+	color: green;
 }

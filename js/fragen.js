@@ -12,6 +12,10 @@ function get_random_quenstion(){
 	return current_question;
 }
 
+function btn_go() {
+   window.location = "fragen.html";
+}
+
 function show_next_question(){
 	$('#answer_box').removeClass('correct')
 	$('#answer_box').removeClass('incorrect')
@@ -34,11 +38,9 @@ function show_random_question(){
 
 function awnser_button(button){
 	if((button == "btn_right" && current_question.is_correct == true) || (button == "btn_wrong" && current_question.is_correct == false)){
-		$('#answer_box').addClass('correct')
-		$('#correct').removeClass('hidden');
+		awnser_is_correct();
 	}else{
-		$('#incorrect').removeClass('hidden');
-		$('#answer_box').addClass('incorrect')
+		awnser_is_incorrect();
 	}
 
 	if(current_question.is_correct == true){
@@ -48,6 +50,26 @@ function awnser_button(button){
 	}
 
 	$('#next_question_box').removeClass('hidden');
+	update_stats();
+}
+
+function awnser_is_correct(){
+	$('#answer_box').addClass('correct');
+	$('#correct').removeClass('hidden');
+	correct_answerd_questions_count += 1;
+}
+
+function awnser_is_incorrect(){
+	$('#incorrect').removeClass('hidden');
+	$('#answer_box').addClass('incorrect');
+	incorrect_answerd_questions_count += 1;
+}
+
+function update_stats(){
+	$('#current_questions_count').text("99999");
+	$('#max_questions_count').text("99999");
+	$('#correct_count').text("99999");
+	$('#incorrect_count').text("99999");
 }
 
 function start_trainer(){

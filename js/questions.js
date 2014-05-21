@@ -2,6 +2,8 @@ not_asked_questions_first_test = new Array();
 not_asked_questions_second_test = new Array();
 asked_quenstions = new Array();
 not_asked_questions = new Array();
+correct_answerd_questions_count = 0;
+incorrect_answerd_questions_count = 0;
 
 current_question = null;
 
