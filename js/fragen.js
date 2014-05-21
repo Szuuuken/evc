@@ -25,6 +25,7 @@ function show_next_question(){
 	$('#correct').addClass('hidden');
 	$('#incorrect').addClass('hidden');
 	show_random_question();
+	update_stats();
 }
 
 function show_random_question(){
@@ -66,10 +67,10 @@ function awnser_is_incorrect(){
 }
 
 function update_stats(){
-	$('#current_questions_count').text("99999");
-	$('#max_questions_count').text("99999");
-	$('#correct_count').text("99999");
-	$('#incorrect_count').text("99999");
+	$('#current_questions_count').text(correct_answerd_questions_count + incorrect_answerd_questions_count);
+	$('#max_questions_count').text(asked_quenstions.length + not_asked_questions.length);
+	$('#correct_count').text(correct_answerd_questions_count);
+	$('#incorrect_count').text(incorrect_answerd_questions_count);
 }
 
 function start_trainer(){
@@ -86,6 +87,8 @@ function start_trainer(){
 	if(show_questtions_from_first_test || show_questtions_from_second_test){
 		$('#select_questions_container').addClass('hidden');	
 		$('#question_container').removeClass('hidden');
+		update_stats();
+		$('#stats_container').removeClass('hidden')
 		show_random_question();
 	}
 }
