@@ -107,7 +107,7 @@ not_asked_questions_second_test.push(new Question("Clipping und Antialiasing: Al
 not_asked_questions_second_test.push(new Question("Clipping und Antialiasing: Supersampling ist eine geeignete Methode, um Aliasing eines gegebenen Rasterbildes nachträglich zu verringern.",false));
 not_asked_questions_second_test.push(new Question("Clipping und Antialiasing: Damit ein Signal korrekt rekonstruiert werden kann, muss es mindestens mit der höchsten Informationsfrequenz abgetastet werden (Nyquist-Limit)",false));
 not_asked_questions_second_test.push(new Question("Clipping und Antialiasing: Unter Antialiasing versteht man die Reduktion unerwünschter Aliasing-Artefakte",true));
-not_asked_questions_second_test.push(new Question("Clipping und Antialiasing: Eine zu Geringe Auflösung bei der Rasterisierung kann zu Aliasing-Artefakten führen.",false));
+not_asked_questions_second_test.push(new Question("Clipping und Antialiasing: Eine zu Geringe Auflösung bei der Rasterisierung kann zu Aliasing-Artefakten führen.",true));
 not_asked_questions_second_test.push(new Question("Clipping und Antialiasing: Ist die Abtastfrquenz niedriger als das Nyquist-Limit, so kann die Information des abgetasteten Signals korrekt rekonstruiert werden.",false));
 not_asked_questions_second_test.push(new Question("Clipping und Antialiasing: Numerische Fehler können zu Aliasing-Artefakten führen.",true));
 not_asked_questions_second_test.push(new Question("Clipping und Antialiasing: Aliasing-Artefakte sind Fehler, die bei der Umwandlung (Diskretisierung) von digitalen in analoge Informationen auftreten können",false));
