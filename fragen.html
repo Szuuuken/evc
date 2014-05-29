@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/fktcss.css">
+		<script src="js/jquery-2.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/questions.js"></script>
+		<script src="js/fragen.js"></script>
+		<title>EVC-FKT</title>
+	</head>
+
+	<body>
+		<div class="jumbotron padding_1">
+			<h1 class="text-center">EVC-FKT</h1>
+			<p class="text-center">Der <b>E</b>inführung in <b>V</b>isual <b>C</b>omputung - <b>F</b>ragen<b>K</b>atalog <b>T</b>rainer<br/>(Unoffical)</p>
+		</div>
+
+
+		<div id="select_questions_container" class="container text-center well">
+			<p><h2>Welche Fragen sollen gestellt werden?</h2></p>
+			<p><label><span class="tab">Fragen vom 1.Test</span><input type="checkbox" id="cb_first_test" name="first_test" value=""></label></p>
+			<p><label><span class="tab">Fragen vom 2.Test</span><input type="checkbox" id="cb_second_test" name="second_test" value=""></label></p>
+			<button type="button" class="btn btn-success" onclick='start_trainer();'>GO!</button>
+		</div>
+
+		<div id="question_container" class="container hidden">
+			<div id="question_box" class="well text-center"></div>
+			<div id="answer_box">
+				<span id="correct" class="hidden info_box center-block">Deine Antwort ist richtig!<br/>Die korrekte Antwort ist:</span>
+				<span id="incorrect" class="hidden info_box center-block">Deine Antwort ist falsch!<br/>Die korrekte Antwort ist:</span>
+				<div class="centering">
+					<button id="btn_right" type="button" class="btn btn-success btn-lg awnswer_button" onclick='awnser_button("btn_right")'>richtig</button>
+					<button id="btn_wrong" type="button" class="btn btn-danger btn-lg awnswer_button" onclick='awnser_button("btn_wrong")'>falsch</button>	
+				</div>
+			</div>
+
+			<span id="next_question_box" class="centering hidden">
+				<button type="button" class="btn btn-primary btn-lg awnswer_button" onclick='show_next_question()'>weiter</button>
+			</span>
+		</div>
+
+		<div id="stats_container" class="container text-center hidden">
+			<span id="question_stats">Questions done:</span> <span id="current_questions_count">??</span>/<span id="max_questions_count">??</span>
+			<span id="correct_stats">correct:</span> <span id="correct_count">??</span>
+			<span id="incorrect_stats">incorrect:</span> <span id="incorrect_count">??</span>
+		</div>
+
+		<div class="container well">
+			<p><b>Keyboard-Shorcuts</b></p>
+			<p><span class="label label-default">R</span> die Frage mit richtig beantworten</p>
+			<p><span class="label label-default">F</span> die Frage mit falsch beantworten</p>
+			<p><span class="label label-default">Space</span> nächste Frage(nur wenn die aktuelle Frage bereits beantwortet wurde.)</p>
+		</div>
+	
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-35000157-2', 'szuuuken.github.io');
+		  ga('send', 'pageview');
+		</script>
+
+	</body>
+</html>
