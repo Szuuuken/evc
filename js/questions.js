@@ -77,7 +77,7 @@ not_asked_questions_first_test.push(new Question("Die Viewport Transformation wa
 not_asked_questions_first_test.push(new Question("Bei der perspektivischen Projektion bleiben die Tiefenwerte von Punkten erhalten.", false));
 not_asked_questions_first_test.push(new Question("Bei der perspektivischen Projektion bleibt die relative Ordnung der Tiefenwerte von Punkten erhalten.", true));
 not_asked_questions_first_test.push(new Question("Pixel mit dem gleichen Grauwert können nach einer Histogrammequalisierung unterschiedliche Grauwerte aufweisen.", false));
-not_asked_questions_first_test.push(new Question("Der Wert eines Histogramm-Bins kann die Anzahl der Pixel des Bildes übersteigen.", true));
+not_asked_questions_first_test.push(new Question("Der Wert eines Histogramm-Bins kann die Anzahl der Pixel des Bildes übersteigen.", false));
 not_asked_questions_first_test.push(new Question("Die Bildinvertierung kann mit einer einzigen Faltung des Bildes mit einem geeigneten Filter bewerkstelligt werden.", false));
 not_asked_questions_first_test.push(new Question("Die Schwellwertoperation kann mit einer einzigen Faltung des Bildes mit einem geeigneten Filter bewerkstelligt werden.", false));
 not_asked_questions_first_test.push(new Question("Der Median-Filter ist ein linearer Filter.", false));
