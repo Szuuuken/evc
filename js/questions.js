@@ -129,5 +129,5 @@ not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosit
 not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Ein Formfaktor gibt die Größe der energieabstrahlenden Fläche eines Patches an",false));
 not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Beim Progressive Refinement wird zuerst die Energie des hellsten Patches auf alle anderen verteilt, dann die des zweithellsten usw.",true));
 not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: In der Fachsprache wird für „Globale Beleuchtung“ oft der englische Ausdruck Radiosity verwendet.",true));
-not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Die Radiosity Methode eignet sich nicht dazu, Objekte mit diffusem und spiegelnden Oberflächen darzustellen.",false));
+not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Die Radiosity Methode eignet sich nicht dazu, Objekte mit diffusem und spiegelnden Oberflächen darzustellen.",true));
 not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Beim Southwell-Verfahren (Shooting-Verfahren) wird in einem Schritt die Energie des hellsten Patches auf alle anderen verteilt, weshalb es schneller konvergiert als das Gauß-Seidel Verfahren.",true));
