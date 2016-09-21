@@ -1,0 +1,96 @@
+.padding_1 {
+	padding: 1px 1px 1px 1px;
+}
+
+.centering{
+	display: flex;
+}
+
+.awnswer_button {
+	width: 35%;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#question_box {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-size: 2em;
+}
+
+.hidden {
+	visibility:hidden;
+}
+
+.correct{
+	background-color: #93b881;
+	height: 10em;
+	margin-bottom: 5em;
+}
+
+.incorrect{
+	background-color: #ff6666;
+	height: 10em;
+	margin-bottom: 5em;
+}
+
+.warnung{
+	color: red;
+}
+
+.info_box{
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.bs-sidebar .nav > .active > ul {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#sidebar_box{
+	margin-top: 20px;
+	margin-left: 2em;
+}
+
+#sidebar_box a{
+	color: #428bca;
+}
+
+.changelog_date{
+	font-weight:bold;
+	margin-bottom: 5px;
+}
+
+#content {
+	margin-right: 0px;
+}
+
+.tab {
+	padding-right: 1em;
+}
+
+.important{
+	color: red;
+	font-weight:bold;
+	font-size: 1.5em;
+}
+
+#stats_container {
+	margin-top: 4em;
+}
+
+#question_stats{
+	font-weight:bold;
+}
+
+#incorrect_stats{
+	font-weight:bold;
+	color: red;
+}
+
+#correct_stats{
+	font-weight:bold;
+	color: green;
+}
