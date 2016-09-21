@@ -48,7 +48,7 @@ not_asked_questions_first_test.push(new Question("Das RGB Farbmodell kommt z.B. 
 not_asked_questions_first_test.push(new Question("Das CIE 1931 XYZ Farbmodell umfasst auch jene Farben, die der Mensch nicht sehen kann.", true));
 not_asked_questions_first_test.push(new Question("Die Farbmodelle HSV und HLS sind intuitivere Modelle, bei denen sich eine Farbkoordinate prinzipiell aus Werten für den Farbton, die Sättigung und Helligkeit zusammensetzt.", true));
 not_asked_questions_first_test.push(new Question("Der Raum der darstellbaren Farben eines Gerätes heißt Gamut.", true));
-not_asked_questions_first_test.push(new Question("MPEG benoetigt mehr Rechenzeit zum Codieren als zum Decodieren.", true));
+not_asked_questions_first_test.push(new Question("MPEG benötigt mehr Rechenzeit zum Codieren als zum Decodieren.", true));
 not_asked_questions_first_test.push(new Question("Der benötige Speicherplatz von JPEG-Dateien ist abhängig vom Bildinhalt.", true));
 not_asked_questions_first_test.push(new Question("Verktorgrafiken zoomen verlustlos.", true));
 not_asked_questions_first_test.push(new Question("Lauflängenkodierung halbiert den Speicherbedarf maximal.", false));
@@ -77,7 +77,7 @@ not_asked_questions_first_test.push(new Question("Die Viewport Transformation wa
 not_asked_questions_first_test.push(new Question("Bei der perspektivischen Projektion bleiben die Tiefenwerte von Punkten erhalten.", false));
 not_asked_questions_first_test.push(new Question("Bei der perspektivischen Projektion bleibt die relative Ordnung der Tiefenwerte von Punkten erhalten.", true));
 not_asked_questions_first_test.push(new Question("Pixel mit dem gleichen Grauwert können nach einer Histogrammequalisierung unterschiedliche Grauwerte aufweisen.", false));
-not_asked_questions_first_test.push(new Question("Der Wert eines Histogramm-Bins kann die Anzahl der Pixel des Bildes übersteigen.", true));
+not_asked_questions_first_test.push(new Question("Der Wert eines Histogramm-Bins kann die Anzahl der Pixel des Bildes übersteigen.", false));
 not_asked_questions_first_test.push(new Question("Die Bildinvertierung kann mit einer einzigen Faltung des Bildes mit einem geeigneten Filter bewerkstelligt werden.", false));
 not_asked_questions_first_test.push(new Question("Die Schwellwertoperation kann mit einer einzigen Faltung des Bildes mit einem geeigneten Filter bewerkstelligt werden.", false));
 not_asked_questions_first_test.push(new Question("Der Median-Filter ist ein linearer Filter.", false));
@@ -119,15 +119,15 @@ not_asked_questions_second_test.push(new Question("Sichtbarkeitsverfahren: Beim 
 not_asked_questions_second_test.push(new Question("Beleuchtung und Schattierung: Bei diffuser Beleuchtung ist die beobachtete Helligkeit abhängig vom Blickwinkel auf die Oberfläche.",false));
 not_asked_questions_second_test.push(new Question("Beleuchtung und Schattierung: Laut Lambert'schen Gesetz ist eine Oberfläche dort am hellsten, wo das Licht orthogonal auf die Oberfläche auftrifft.",true));
 not_asked_questions_second_test.push(new Question("Beleuchtung und Schattierung: Bei der Gourard-Schattierung wird die tatsächliche Beleuchtungsberechnung nur für die Eckpunkte des Polygons durchgeführt.",true));
-not_asked_questions_second_test.push(new Question("Beleuchtung und Schattierung: Je kleiner der Cosinus-Exponent im Phong-Beleuchtungsmodell, desto rauher wirkt die Oberfläche.",true));
+not_asked_questions_second_test.push(new Question("Beleuchtung und Schattierung: Je kleiner der Cosinus-Exponent im Phong-Beleuchtungsmodell, desto rauer wirkt die Oberfläche.",true));
 not_asked_questions_second_test.push(new Question("Beleuchtung und Schattierung: Die Phong-Schattierung erlaubt es, für jedes Polygonpixel individuell die Beleuchtung zu berechnen.",true));
 not_asked_questions_second_test.push(new Question("Beleuchtung und Schattierung: Der Nachteil der Phongschattierung ist das etwaige Auftreten des Mach-Band-Effekts.",false));
 not_asked_questions_second_test.push(new Question("Ray-Tracing: Ein Nachteil von Ray-Casting ist der hohe Speicherbedarf, der durch die vielen Rays (mehrere Millionen!) entsteht.",false));
 not_asked_questions_second_test.push(new Question("Ray-Tracing: Beim Ray-Casting wird durch jedes Pixel ein Strahl in Blickrichtung in die Szene gelegt und mit allen Objekten geschnitten.",true));
 not_asked_questions_second_test.push(new Question("Ray-Tracing: Bei der Path-Tracing Methode werden Lichtstrahlen nicht vom Licht aus sondern vom Betrachter aus verfolgt.",false));
-not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Die Radiosity-Methode eignet sich sehr gut dazu, Spiegelungen und Schlagschatten zu berechnen",true));
-not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Ein Formfaktor gibt die Größe der energieabstrahlenden Fläche eines Patches an",true));
-not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Beim Progressive Refinement wird zuerst die Energie des Hellsten Patches auf alle anderen verteilt, dann die zweithellsten usw",false));
+not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Die Radiosity-Methode eignet sich sehr gut dazu, Spiegelungen und Schlagschatten zu berechnen",false));
+not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Ein Formfaktor gibt die Größe der energieabstrahlenden Fläche eines Patches an",false));
+not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Beim Progressive Refinement wird zuerst die Energie des hellsten Patches auf alle anderen verteilt, dann die des zweithellsten usw.",true));
 not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: In der Fachsprache wird für „Globale Beleuchtung“ oft der englische Ausdruck Radiosity verwendet.",true));
-not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Die Radiosity Methode eignet sich nicht dazu, Objekte mit diffusem und spiegelnden Oberflächen darzustellen.",false));
+not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Die Radiosity Methode eignet sich nicht dazu, Objekte mit diffusem und spiegelnden Oberflächen darzustellen.",true));
 not_asked_questions_second_test.push(new Question("Globale Beleuchtung, Radiosity: Beim Southwell-Verfahren (Shooting-Verfahren) wird in einem Schritt die Energie des hellsten Patches auf alle anderen verteilt, weshalb es schneller konvergiert als das Gauß-Seidel Verfahren.",true));
