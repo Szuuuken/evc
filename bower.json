@@ -1,0 +1,8 @@
+{
+  "name": "evc",
+  "description": "Einführung in Visual Computing - FragenKatalog Trainer",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap-sass": "^3.3.7"
+  }
+}
