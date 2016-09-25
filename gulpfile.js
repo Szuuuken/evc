@@ -31,7 +31,6 @@ gulp.task('sass', function () {
 });
 
 gulp.task('templates', function() {
-  console.log("bbbbb");
   return gulp.src('./app/*.jade')
     .pipe(jade())
     .pipe(gulp.dest('dist'))
@@ -41,7 +40,8 @@ gulp.task('templates', function() {
 gulp.task('jade-watch', ['templates']);
 
 gulp.task('default', ['js','sass','images','templates'], function () {
-  browserSync.init( { server: "dist" } );
+  browserSync.init( { server: "./dist" } );
   gulp.watch('./app/**/*.jade', ['jade-watch']);
   gulp.watch('./app/sass/**/*.sass', ['sass']);
+  gulp.watch('./app/js/**/*.js', ['js']);
 });

@@ -1,0 +1,54 @@
+.sidebar
+  color: #FFFFFF
+  background-color: #6611aa
+  min-width: 300px
+
+  @media only screen and (max-width: $width-break)
+    text-align: center
+    padding-bottom: 50px
+
+  h2
+    text-align: center
+    margin-bottom: 50px
+
+  a
+    color: #FFFFFF
+    &:visited
+      color: #FFFFFF
+
+.hp-wrapper
+  display: flex
+
+  @media (max-width: $width-break)
+    flex-direction: column
+
+  ul
+    list-style-type: none
+    font-size: 20px
+    padding-left: 20px
+
+    li
+      margin: 5px
+      @media (max-width: $width-break)
+        display: block
+        margin: 15px
+        font-size: 25px
+
+    @media (max-width: $width-break)
+      display: inline
+      padding: 0
+
+.content
+  margin: 30px
+  padding-top: 60px
+
+  .section p
+    font-size: 20px
+
+  @media (max-width: $width-break)
+    padding-top: 0
+
+html, body, .hp-wrapper
+  min-height: 100%
+  display: flex
+  align-items: stretch
