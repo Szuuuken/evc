@@ -1,4 +1,8 @@
+var id_count = 0;
+
 function Question(question,is_correct){
+	id_count += 1;
+	this.id = id_count;
 	this.question = question;
 	this.is_correct = is_correct;
 }

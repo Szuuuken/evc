@@ -9,20 +9,45 @@ html
       include _jade/sidebar.jade
       .content
         .section
-          h2 About
+          h2#about About
+          hr
           p Auf dieser Seite könnt ihr die multiple choice Fragen aus der LVA Einführung in Visual Computing durchgehen und lernen.
-          p Die Fragen können als #[a(href='#') Liste] betrachtet werden oder mit dem #[a(href='#') "Trainer"] geübt werden.
-          p Ich kann leider nicht garantieren, dass alle Fragen aus allen Tests vorhanden und korrekt sind. Jedoch sind 95% aller ins System eingtragenen Fragen korrekt. Falls ihr falsche Fragen findet oder neue Fragen zum System hinzufügen wollt lest euch den Abschnitt #[a(href='#') mitmachen] durch.
+          p Die Fragen könen als #[a(href='liste.html') Liste] betrachtet werden oder mit dem #[a(href='trainer.html') "Trainer"] geübt werden.
+          p Ich habe evc bereits abgeschlossen und damit liegt nun die Weiterentwicklung und pflege der Fragen bei euch. Mehr informationn zum Mitmachen findet ihr im Abschnitt #[a(href='#mitmachen') mitmachen].
+          p Die Seite ist auf github gehostet.
           
         .section
-          h2 Fragen
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus tellus nec magna pellentesque bibendum. Duis tempus sed velit eget dapibus. Maecenas ut nisi dui. Fusce auctor risus purus, vel dapibus libero vulputate vitae. Vivamus sollicitudin est pulvinar, congue purus imperdiet, luctus magna. Nunc mattis id urna ut hendrerit. Cras pellentesque lacinia sapien nec egestas. Aenean accumsan elementum ipsum. Quisque iaculis rhoncus libero vitae pharetra. Phasellus pulvinar egestas libero, ac pellentesque augue fringilla in. Curabitur lacinia metus vitae turpis dignissim, ac ullamcorper elit vulputate.
-          p Quisque leo neque, eleifend sit amet elementum id, fermentum in enim. Nulla sollicitudin eu neque eget imperdiet. Nunc sodales ante eu tortor convallis luctus. Quisque dictum nunc quis massa imperdiet pretium. Phasellus consectetur justo in massa scelerisque mollis. Etiam tempus aliquam massa nec pharetra. Aliquam efficitur sagittis mauris in molestie. Vestibulum eu volutpat ex. Aliquam purus dui, fermentum et ullamcorper id, tincidunt nec ligula. Praesent pharetra mi a congue scelerisque. Curabitur aliquam velit ut turpis auctor, vitae accumsan elit euismod.
+          h2#fragenkatalog Fragenkatalog
+          hr
+          p Die Fragen kommen aus einer vielzahl an Quellen wie dem vowi, informatik-forum, Studenten und so weiter.
+          p Des weiteren werden die Fragen in die Kategorienen Test1 und Test2 eingeteilt.
+          p Ich kann leider #[b nicht] garantieren, dass alle Fragen aus allen Tests vorhanden und korrekt sind. Jedoch sind 95% aller ins System eingtragenen Fragen korrekt. Falls ihr falsche Fragen findet oder neue Fragen zum System hinzufügen wollt lest euch den Abschnitt #[a(href='#mitmachen') mitmachen] durch.
           
         .section
-          h2 Mitmachen
-          p Mauris a facilisis metus, eget cursus eros. Integer id felis id leo facilisis cursus eget et mi. Vivamus aliquet condimentum magna, vel viverra sem bibendum et. Suspendisse vitae placerat est. Sed a posuere elit. Vivamus aliquam justo massa, in aliquam ipsum dictum quis. Proin eu leo id sem fringilla tempor. Duis at vestibulum ipsum. Aenean vestibulum magna sit amet varius porttitor. In in felis libero.
-          p Nunc mauris justo, dignissim et turpis sed, feugiat condimentum nunc. Mauris vehicula imperdiet nunc, eget volutpat tellus pulvinar eget. Nunc odio elit, gravida sit amet pulvinar a, vehicula vel lorem. Vivamus volutpat arcu sit amet nisl efficitur, nec sollicitudin enim pharetra. Aliquam id urna lacinia, fermentum erat ut, rutrum ipsum. Aliquam dapibus tortor ut sem hendrerit, id dignissim ante sodales. Fusce pretium dolor tortor, et sodales elit dignissim in.
+          h2#mitmachen Mitmachen
+          hr
+          p Es gibt eine vielzahl an Möglichkeiten wie du helfen kannst die Seite verbessern kannst, es muss #[b nicht nur] programmiert weerden.
+          
+          h3 Pflege der Fragen
+          p Es gibt mehrere Möglichkeiten wie du dich um die Pflege der Fragen kümmern kannst:
+          ul
+            li ein issue (bug) für eine falsche Frage erstellen
+            li einen issue (feature request) für eine neue Frage erstellen
+            li eine Frage im code korregieren (js/fragen.js)
+            li eine neue Frage im code hinzufügen (js/fragen.js)
+          
+          h3 Fragen von der LVA-Leitung prüfen lassen
+          p Bei einigen Fragen kommt es immer wieder zu längeren Disskussionn, ob sie nun korrekt ist oder nicht. Deswegen wurde die Idee geboren, sich die Liste aller Fragen auszudrucken und in die Sprechstunde der LVA-Leitung zu gehen um die korrektheit zu überprüfen.
+          
+          h3 Bugs melden
+          p Erstelle einfach ein issue auf gibhub
+          
+          h3 Bugs beheben / neue Features entwickeln / coden
+          p Mach einfach einen pull request auf github oder bitte mich dir schreibrechte zu geben.
+          
+          h3 github
+          p der code liegt auf #[a(href='https://github.com/Szuuuken/evc') github]
+          
     script(src='js/jquery.min.js')
     script(src='js/bootstrap.min.js')
     

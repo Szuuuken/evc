@@ -7,7 +7,12 @@ html
   body  
     .hp-wrapper
       include _jade/sidebar.jade
-      .content.fragenliste
+      .content
+        .col-sm-12
+          button.btn.btn-primary(onclick='btnShowResultOnClick();') Ergebnis anzeigen
+          hr
+        .fragenliste.col-sm-12
+        
     script(src='js/jquery.min.js')
     script(src='js/bootstrap.min.js')
     script(src='js/fragen.js')
