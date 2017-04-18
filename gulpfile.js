@@ -28,7 +28,6 @@ gulp.task('sass', function () {
     .pipe(sass())
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-    .pipe(bom())
     .pipe(gulp.dest('./dist/css'))
     .pipe(reload({stream: true}));
 });
@@ -41,6 +40,7 @@ gulp.task('fonts', function () {
 gulp.task('templates', function () {
   return gulp.src('./app/*.jade')
     .pipe(jade())
+    .pipe(bom())
     .pipe(gulp.dest('dist'))
     .pipe(reload({stream: true}));
 });
