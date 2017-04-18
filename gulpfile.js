@@ -8,32 +8,32 @@ var autoprefixer = require('gulp-autoprefixer');
 var bom = require('gulp-bom');
 
 gulp.task('js', function () {
-    return gulp.src([
-      './bower_components/jquery/dist/jquery.min.js',
-      './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-      './app/js/*.js'])
-      .pipe(bom())
-      .pipe(gulp.dest('./dist/js/'))
-      .pipe(reload({stream: true}));
+  return gulp.src([
+    './bower_components/jquery/dist/jquery.min.js',
+    './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+    './app/js/*.js'])
+    .pipe(bom())
+    .pipe(gulp.dest('./dist/js/'))
+    .pipe(reload({stream: true}));
 });
 
 gulp.task('images', function () {
-    return gulp.src('./app/img/**')
-          .pipe(gulp.dest('./dist/img/'))
+  return gulp.src('./app/img/**')
+    .pipe(gulp.dest('./dist/img/'));
 });
 
 gulp.task('sass', function () {
-    return gulp.src('./app/sass/*.sass')
-      .pipe(sourcemaps.init())
-      .pipe(sass())
-      .pipe(autoprefixer())
-      .pipe(sourcemaps.write('.'))
-      .pipe(bom())
-      .pipe(gulp.dest('./dist/css'))
-      .pipe(reload({stream: true}));
+  return gulp.src('./app/sass/*.sass')
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write('.'))
+    .pipe(bom())
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(reload({stream: true}));
 });
 
-gulp.task('fonts',function () {
+gulp.task('fonts', function () {
   return gulp.src('./bower_components/bootstrap-sass/assets/fonts/**/*')
     .pipe(gulp.dest('./dist/fonts'));
 });
