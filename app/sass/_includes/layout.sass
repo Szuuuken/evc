@@ -3,8 +3,20 @@
   background-color: #6611aa
   min-width: 300px
 
+  @media (max-width: $width-break)
+    max-height: 70px
+    transition: max-height 0.25s ease-in
+
   h2.sidebar-header
     font-weight: normal
+
+    span.glyphicon.glyphicon-menu-hamburger
+      display: none
+      padding-left: 5%
+      font-size: 20px
+      cursor: pointer
+      @media (max-width: $width-break)
+        display: inline
 
   ul
     list-style-type: none
@@ -57,7 +69,8 @@
     @media (max-width: $width-break)
       padding-top: 0
 
-
+.sidebar-show
+  max-height: 500px
 // html, body, .hp-wrapper
 //  min-height: 100%
 //  display: flex

@@ -30,6 +30,11 @@ gulp.task('sass', function () {
       .pipe(reload({stream: true}));
 });
 
+gulp.task('fonts',function(){
+  return gulp.src('./bower_components/bootstrap-sass/assets/fonts/**/*')
+    .pipe(gulp.dest('./dist/fonts'));
+});
+
 gulp.task('templates', function() {
   return gulp.src('./app/*.jade')
     .pipe(jade())
