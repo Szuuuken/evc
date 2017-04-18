@@ -3,6 +3,9 @@
   .question-details
     display: flex
     justify-content: space-between
+    @media (max-width: $width-break-sm)
+      flex-direction: column
+      justify-content: center
 
   .result
     min-width: 10px
@@ -12,6 +15,8 @@
   .radio-buttons
     min-width: 220px
     margin-left: 20px
+    @media (max-width: $width-break)
+      margin-left: 0
 
   hr
     margin-top: 0
@@ -19,9 +24,23 @@
 .listen-controls
   margin-left: 0px
   padding-left: 0px
-  
+
   .btn,select
     margin-top: 5px
 
 hr
   border-top: 1px solid #ccc
+
+@media print
+  .fragen-liste-item.bg-success
+      background-color: #dff0d8 !important
+  .fragen-liste-item.bg-danger
+    background-color: #f2dede !important
+  .fragen-liste-item.bg-info
+    background-color: #d9edf7 !important
+
+  .sidebar
+    ul
+      display: none
+  .listen-controls
+    display: none
