@@ -2,3 +2,4 @@ dist/
 bower_components/
 old/
 node_modules/
+publish.sh
