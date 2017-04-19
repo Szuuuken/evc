@@ -8,16 +8,16 @@ html
     .hp-wrapper
       include _jade/sidebar.jade
       .content
-        .col-sm-12.listen-controls
-          .col-sm-3
+        .col-md-12.listen-controls
+          .col-md-3
             select.form-control#fragen-select
               option(value="0") Alle Fragen
               option(value="1") 1. Test
               option(value="2") 2. Test
-          .col-sm-6.remove-extra-padding
-            .col-sm-6.max-width-200
+          .col-md-6.remove-extra-padding
+            .col-md-8.max-width-200
               button.btn.btn-primary(onclick='btnShowResultOnClick();') Antworten auswerten
-            .col-sm-6.max-width-200
+            .col-md-4.max-width-200
               button.btn.btn-primary(onclick='btnShowAnswersOnClick();') Antworten anzeigen
           
         .col-sm-12

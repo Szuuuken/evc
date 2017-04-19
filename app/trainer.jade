@@ -9,6 +9,18 @@ html
       include _jade/sidebar.jade
       .content
         h1 trainer
+        #question-selection
+          .well.text-center
+            h2 Welche Fragen sollen gestellt werden?
+            p
+              | Fragen vom 1.Test
+              input(type='checkbox') 
+            p
+              | Fragen vom 2.Test
+              input(type='checkbox')
+            .flex-center
+              button.btn.btn-success GO!
+            
     script(src='js/jquery.min.js')
     script(src='js/bootstrap.min.js')
     script(src='js/main.js')
