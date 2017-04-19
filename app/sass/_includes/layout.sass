@@ -59,6 +59,7 @@
 
   .content
     //min-width: 70%
+    min-height: 100%
     flex: 1
     margin: 30px
     padding-top: 60px
@@ -82,9 +83,16 @@
   display: flex
   justify-content: center
 
-html, body, .hp-wrapper
+html, body
+  //background-color: pink
   min-height: 100%
   display: flex
-  align-items: stretch
-html,body
-  flex-direction: column
+  flex-flow: column
+  flex-grow: 1
+.hp-wrapper
+  //background-color: limegreen
+  min-height: 100%
+  display: flex
+  flex-grow: 1
+//.content
+  //background-color: orangered
