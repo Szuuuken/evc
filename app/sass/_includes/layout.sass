@@ -48,7 +48,7 @@
 .hp-wrapper
   display: flex
 
-  @media (max-width: $width-break)
+  @media (max-width: $width-break), print
     flex-direction: column
 
   ol,ul
@@ -81,7 +81,10 @@
 .flex-center
   display: flex
   justify-content: center
-// html, body, .hp-wrapper
-//  min-height: 100%
-//  display: flex
-//  align-items: stretch
+
+html, body, .hp-wrapper
+  min-height: 100%
+  display: flex
+  align-items: stretch
+html,body
+  flex-direction: column

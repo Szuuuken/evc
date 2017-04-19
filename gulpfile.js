@@ -11,6 +11,7 @@ gulp.task('js', function () {
   return gulp.src([
     './bower_components/jquery/dist/jquery.min.js',
     './bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+    './bower_components/sweetalert/dist/sweetalert.min.js',
     './app/js/*.js'])
     .pipe(bom())
     .pipe(gulp.dest('./dist/js/'))

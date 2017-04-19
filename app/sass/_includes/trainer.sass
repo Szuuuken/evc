@@ -1,3 +1,44 @@
+.well
+  @media (min-width: $width-break)
+    width: 80%
+  @media (max-width: $width-break)
+    width: 100%
+
 #question-selection
   input[type="checkbox"]
     margin-left: 10px
+#question-buttons button
+  width: 35%
+  margin: 25px
+
+#question-finish
+  button
+    margin: 10px
+  .red
+    color: red
+  .green
+    color: green
+  .bold
+    font-weight: bold
+
+#question-statistics
+  margin-bottom: 10px
+  b
+    margin-right: 5px
+
+  #correct-label
+    color: green
+    font-weight: bold
+    margin-left: 10px
+    margin-right: 5px
+  #incorrect-label
+    color: red
+    font-weight: bold
+    margin-left: 10px
+    margin-right: 5px
+
+#question-shortcuts
+  span
+    margin-right: 10px
+  @media (max-width: $width-break)
+    display: none

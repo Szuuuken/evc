@@ -8,21 +8,62 @@ html
     .hp-wrapper
       include _jade/sidebar.jade
       .content
-        h1 trainer
-        #question-selection
+        h1 Trainer
+        #question-selection.flex-center
           .well.text-center
             h2 Welche Fragen sollen gestellt werden?
             p
               | Fragen vom 1.Test
-              input(type='checkbox') 
+              input(type='checkbox')#cbo-test1
             p
               | Fragen vom 2.Test
-              input(type='checkbox')
+              input(type='checkbox')#cbo-test2
             .flex-center
-              button.btn.btn-success GO!
+              button.btn.btn-success#start-trainer-btn Los!
+        #question-box.flex-center.hidden
+          .well.text-center
+        #question-finish.flex-center.hidden
+          .well
+            .text-center.bold Du hast alle Fragen beantwortet.
+            .text-center
+              span.green richtig beantwortet: 
+              span#fin-richtig-count 0
+            .text-center
+              span.red falsch beantwortet: 
+              span#fin-falsch-count 0
+            .text-center
+              | insgesammt beantwortete Fragen: 
+              span#fin-gesammt-count 0
+            .flex-center
+              button.btn.btn-primary#btn-retry-incorrect falsche fragen nochmal
+              button.btn.btn-primary#btn-reset reset
+        #question-buttons.flex-center.hidden
+          button.btn.btn-lg.btn-success#btn-correct richtig
+          button.btn.btn-lg.btn-danger#btn-incorrect falsch
+        #question-statistics.flex-center.hidden
+          b Frage:
+          span#question-count 0/0
+          span#correct-label richtig:
+          span#correct-count 0
+          span#incorrect-label falsch:
+          span#incorrect-count 0
+        #question-shortcuts.flex-center
+          .well
+            p
+              b Keyboard-Shorcuts
+            p
+              span.label.label-default R
+              | die Frage mit richtig beantworten
+            p 
+              span.label.label-default F
+              | die Frage mit falsch beantworten
+            p
+              span.label.label-default Space
+              | nächste Frage(nur wenn die aktuelle Frage bereits beantwortet wurde.)
             
     script(src='js/jquery.min.js')
     script(src='js/bootstrap.min.js')
+    script(src='js/sweetalert.min.js')
     script(src='js/main.js')
     script(src='js/fragen.js')
     script(src='js/trainer.js')
