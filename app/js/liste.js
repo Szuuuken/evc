@@ -39,6 +39,21 @@ function showQuestionResult (question) {
 	}
 }
 
+function showQuestionAnswer (question) {
+	var $question = $(question);
+	var $rbCorrect = $question.find('.rbCorrect');
+	var $rbIncorrect = $question.find('.rbIncorrect');
+	var questionHtmlId = $question.attr('id');
+
+	var questionObject = questionHtmlRelation[questionHtmlId];
+
+	if (questionObject.is_correct) {
+		$rbCorrect.prop('checked', true);
+	} else {
+		$rbIncorrect.prop('checked', true);
+	}
+}
+
 function addQuestion (question, $fragenlisteDiv) {
 	var itemId = 'fragen-liste-item-id-' + question.id;
 	var item = '<div class="fragen-liste-item" id="' + itemId + '">';
@@ -56,6 +71,14 @@ function addQuestion (question, $fragenlisteDiv) {
 }
 
 /* #### events ####*/
+
+function btnShowAnswersOnClick () {
+	var fragenDivs = $('.fragen-liste-item');
+
+	$.each(fragenDivs, function (index, value) {
+		showQuestionAnswer(value);
+	});
+}
 
 function btnShowResultOnClick () {
 	var fragenDivs = $('.fragen-liste-item');

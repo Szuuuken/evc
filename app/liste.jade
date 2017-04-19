@@ -9,13 +9,16 @@ html
       include _jade/sidebar.jade
       .content
         .col-sm-12.listen-controls
-          .col-sm-2
+          .col-sm-3
             select.form-control#fragen-select
               option(value="0") Alle Fragen
               option(value="1") 1. Test
               option(value="2") 2. Test
-          .col-sm-2
-            button.btn.btn-primary(onclick='btnShowResultOnClick();') Ergebnis anzeigen
+          .col-sm-6.remove-extra-padding
+            .col-sm-6.max-width-200
+              button.btn.btn-primary(onclick='btnShowResultOnClick();') Antworten auswerten
+            .col-sm-6.max-width-200
+              button.btn.btn-primary(onclick='btnShowAnswersOnClick();') Antworten anzeigen
           
         .col-sm-12
           hr
