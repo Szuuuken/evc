@@ -5,7 +5,8 @@ VU Einführung in Visual Computing Fragenkatalog Trainer
 
 News/Infos: http://szuuuken.github.io/evc/
 
-Fragen: http://szuuuken.github.io/evc/fragen.html
+Fragen-Trainer: http://szuuuken.github.io/evc/trainer.html
+Fragenliste: http://szuuuken.github.io/evc/liste.html
 
 ## Prerequisites
 
