@@ -27,6 +27,7 @@ var fragenTest1 = [
 	new Question('Rot-grün-blinde Personen sehen nur die Farben Rot und Grün.', false),
 	new Question('Licht mit höherer Frequenz hat eine kleinere Wellenlänge.', true),
 	new Question('Die Purpurlinie des CIE Chromaticitydiagramms enthält spektralreine Farben.', false),
+	new Question('Die Purpurlinie des CIE-Chromaticitydiagramms besteht aus spektralreinen Farben.', false),
 	new Question('Drucker verwenden das CMYK Farbmodell.', true),
 	new Question('Licht mit niedrigerer Frequenz hat eine kleinere Wellenlänge.', false),
 	new Question('Beim CMYK-Farbmodell steht K für „Key“ und entspricht der Farbe schwarz.', true),
@@ -74,7 +75,14 @@ var fragenTest1 = [
 	new Question('Bei der Fourier-Transformation werden tiefe Bildfrequenzen unterdrückt.', false),
 	new Question('Mittels der Hough-Transformation können neben Linien auch andere geometrische Strukturen detektiert werden.', true),
 	new Question('Bei der Hough Transformation zur Liniendetektion besteht das Akkumulator Array (Hough Raum) aus einer Dimension.', false),
-	new Question('Im Fourierspektrum liegen die hohen Frequenzen näher am Rand als die tiefen Frequenzen.', true)
+	new Question('Im Fourierspektrum liegen die hohen Frequenzen näher am Rand als die tiefen Frequenzen.', true),
+	new Question('Je größer die fokale Länge einer Kamera, desto größer erscheinen Objekte im Bild', true),
+	new Question('Bei einer Lochkamera geschieht im Gegensatz zu einer herkömmlichen Kamera keine perspektivische Projektion', false),
+	new Question('Die plenoptische Funktion gibt die Lichtintensität für verschiedene Eingabeparameter an', true),
+	new Question('Bei einem Color Filter Array (Bayer Pattern) werden nur 25% der Sensorelemente zur Messung des Grünanteils verwendet', false),
+	new Question('Bei einer Lauflängenkodierung (Run Length Encoding) kann es im ungünstigen Fall auch zu einer Vergrößerung des benötigten Speicherplatzes kommen', true),
+	new Question('Bei der Intraframe-Kompression wird lediglich der Unterschied zwischen den Frames eines Videos kodiert und komprimiert', false),
+	new Question('Im Gegensatz zu Bildern im Raster-Bildformat lassen sich Bilder im Vektor-Bildformat ohne Qualitätsverlust beliebigverkleinern oder vergrößern', true)
 ];
 
 //######################################################################################################################################################
