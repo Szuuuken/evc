@@ -29,5 +29,5 @@ You will need the following things properly installed on your computer.
 * run `gulp` to start the default task. This task will:
   1. build the app
   2. watch all files for changes and rebuild it
-  3. start a lightweight webserver to view the app and refresh the browser if you chnage the files
+  3. start a lightweight webserver to view the app and refresh the browser if you change the files
 * or run `gulp build` to build the app once
