@@ -139,7 +139,7 @@ var fragenTest2 = [
 	new Question('Globale Beleuchtung, Radiosity: Radiosity ist eine blickpunktabhängige Methode zur Berechnung der Helligkeit der einzelnen Patches.', false),
 	new Question('MultiscaleOperations: Bei einer Gaußpyramide enthalten die kleineren Bilder weniger hohe Frequenzanteile als die großen.', true),
 	new Question('MultiscaleOperations: Die Laplacepyramidekann durch die Differenz von gaußgefilterten Bildern approximiert werden.', true),
-	new Question('MultiscaleOperations: Bei einer Laplacepyramideenthalten die kleineren Bilder weniger hohe Frequenzanteile als die großen.', true),
+	new Question('MultiscaleOperations: Bei einer Laplacepyramide enthalten die kleineren Bilder weniger hohe Frequenzanteile als die großen.', true),
 	new Question('MultiscaleOperations: Bei der bilinearen Interpolation errechnet sich der neue Wert nach einer Bildverkleinerung aus den 4 Nachbarwerten.', true),
 	new Question('Image Segmentation: Dynamische/Adaptive Schwellwertverfahren verwenden einen globalen Schwellwert.', false),
 	new Question('Image Segmentation: Beim Relaxation Labellinghängt die Zuordnung der Pixel zu einem Label auch von der Zuordnung der Nachbarpixel ab', true),
