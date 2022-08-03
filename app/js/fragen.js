@@ -128,6 +128,8 @@ var fragenTest2 = [
 	new Question('Ray-Tracing: Lässt man alle Blickstrahlen von einem Punkt ausgehen, so wird das Bild in Perspektive gerendert.', true),
 	new Question('Ray-Tracing: Die Basisidee beim Ray-Tracing besteht darin, Licht, welches auf einen Bildpunkt trifft, zurückzuverfolgen und daraus auf das Aussehen (Farbe) dieses Bildpunktes zu schließen.', true),
 	new Question('Ray-Tracing: Ray-Tracing kann –zum Beispiel –Spiegelungen und Lichtbrechung simulieren.', true),
+	new Question('Globale Beleuchtung, Texturen: Beim Environment Mapping wird die exakte Reflexionsrichtung für die Schattierung verwendet.', false),
+	new Question('Globale Beleuchtung, Texturen: Beim Bump-Mapping ändert sich die Geometrie nicht, lediglich die Oberflächennormale wird geändert.', true),
 	new Question('Globale Beleuchtung, Radiosity: Die Radiosity-Methode eignet sich sehr gut dazu, Spiegelungen und Schlagschatten zu berechnen', false),
 	new Question('Globale Beleuchtung, Radiosity: Ein Formfaktor gibt die Größe der energieabstrahlenden Fläche eines Patches an', false),
 	new Question('Globale Beleuchtung, Radiosity: Beim Progressive Refinement wird zuerst die Energie des hellsten Patches auf alle anderen verteilt, dann die des zweithellsten usw.', true),
@@ -145,6 +147,9 @@ var fragenTest2 = [
 	new Question('Image Segmentation: Beim Relaxation Labellinghängt die Zuordnung der Pixel zu einem Label auch von der Zuordnung der Nachbarpixel ab', true),
 	new Question('Image Segmentation: Bei Split&Mergewird ein Maß für die Homogenität einer Bildregion benötigt, um entscheiden zu können, ob die Region weiter gesplittet werden soll.', true),
 	new Question('Kurven und Flächen: Bei Bézier-Kurven haben die Stützpunkte lokalen Einfluss auf die Kurve.', false),
+	new Question('Die Hermite-Interpolation erfolgt mit Polynomen ersten Grades.', false),
+	new Question('Die Hermite-Interpolation erfolgt mit Polynomen zweiten Grades.', false),
+	new Question('Die Hermite-Interpolation erfolgt mit Polynomen dritten Grades.', true),
 	new Question('Kurven und Flächen: Freiformflächen, deren Stützpunkte auf der Fläche liegen, nennt man interpolierend.', true),
 	new Question('Kurven und Flächen: Bei B-Spline-Kurven haben die Stützpunkte lokalen Einfluss auf die Kurve.', true),
 	new Question('Kurven und Flächen: Freiformflächen, deren Stützpunkte nicht alle auf der Fläche liegen, sondern die Fläche/Kurve nur durch ihre Lage beeinflussen, nennt man approximierend.', true)
